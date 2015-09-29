@@ -1,0 +1,12 @@
+[user]
+	email = ryanemax@gmail.com
+	name = Ryane Max
+[credential]
+	helper = store
+[http]
+	proxy = http://127.0.0.1:8118
+	sslverify = false
+[https]
+	proxy = http://127.0.0.1:8118
+[push]
+	default = simple
