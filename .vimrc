@@ -46,6 +46,7 @@ filetype plugin indent on    " required
 " ================================
 " set coding default
 syntax on
+set hls " 打开搜索高亮
 " set Ultisnips
 " " Track the engine.
 Plugin 'SirVer/ultisnips'
@@ -57,8 +58,8 @@ set rtp+=~/.vim/ftdetect " auto load UltiSnips
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<c-h>"
+let g:UltiSnipsJumpBackwardTrigger="<c-l>"
 
 " " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"

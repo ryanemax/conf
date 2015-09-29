@@ -1,15 +1,15 @@
 # 忽略用户目录所有文件
 *
-!.gitignore
+!./.gitignore
 
 # 添加手写脚本
-!*.sh
+!./*.sh
 
 # 添加xinitrc配置
 
 # 添加vim配置
-!.vimrc
-!*.vim/**/*
+!./.vimrc
+!./.vim/**/*
 
 # 添加zsh配置
 
