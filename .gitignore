@@ -13,6 +13,9 @@
 .bash_logout
 !.profile
 
+# Arch Linux
+!.xinitrc
+
 # Zsh
 !.zshrc
 !.zsh
