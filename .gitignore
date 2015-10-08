@@ -15,6 +15,7 @@
 
 # Arch Linux
 !.xinitrc
+!*.sh
 
 # Zsh
 !.zshrc
