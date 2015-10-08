@@ -60,7 +60,6 @@
 # Vim plugins, ftplugins, syntax etc etc
 !.vim
 !.vim/*
-!.vim/**/*
 # But do ignore netrw history
 .vim/.netrwhist
 !.vim/autoload/*
@@ -74,6 +73,7 @@
 !.vim/bundle/*/*/*
 !.vim/bundle/*/*/*/*
 !.vim/bundle/*/*/*/*/*
+!.vim/bundle/Vundle.vim/*
 !.vim/colors/*
 !.vim/doc/*
 !.vim/ftdetect/*
