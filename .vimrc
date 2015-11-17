@@ -47,6 +47,34 @@ filetype plugin indent on    " required
 " set coding default
 syntax on
 set hls " 打开搜索高亮
+
+" 代码全文检索插件
+Plugin 'rking/ag.vim'
+
+" set tab string 指定文件设置缩进字符串
+autocmd BufNewFile,BufRead *.html,*.htm set noexpandtab tabstop=2 shiftwidth=2
+
+" set multi tex format support
+"" Plugin 'vim-pandoc/vim-pandoc'
+"" Plugin 'vim-pandoc/vim-pandoc-syntax'
+" 设置折叠规则
+" let g:pandoc#folding#fold_fenced_codeblocks = 1
+" let g:pandoc#folding#level = 2
+" 设置Conceal高亮
+"" let g:pandoc#syntax#conceal#use = 0
+" 设置codeblock内高亮
+"" let g:pandoc#syntax#codeblocks#embeds#langs = ["js=javascript","php", "bash=sh", "golang=go", "html"]
+" 禁用折叠
+"" let g:pandoc#modules#disabled = ["folding"]
+
+
+" set vim-multiple-cursors
+Plugin 'terryma/vim-multiple-cursors'
+" Default mapping
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
 " set Ultisnips
 " " Track the engine.
 Plugin 'SirVer/ultisnips'
@@ -63,15 +91,19 @@ let g:UltiSnipsJumpBackwardTrigger="<c-l>"
 
 " " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
-" set Syntastic
+
+" set Syntastic 语法鉴别插件
 Plugin 'scrooloose/syntastic'
+
+nmap <F4> :SyntasticCheck<CR>
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 " let g:syntastic_go_checkers = ['gofmt']
@@ -126,7 +158,10 @@ Plugin 'scrooloose/nerdtree'
 " autocmd vimenter * NERDTree
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-nmap <F9> :NERDTreeToggle<CR>
+nmap <F2> :NERDTreeToggle<CR>
+" 将 NERDTree 的窗口设置在 vim 窗口的右侧（默认为左侧）
+"" let NERDTreeWinPos="right"
+
 
 " set YCM
 Plugin 'Valloric/YouCompleteMe'

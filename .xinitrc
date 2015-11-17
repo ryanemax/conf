@@ -63,6 +63,9 @@ export XMODIFIERS="@im=fcitx"
 fcitx -d &
 #Configure Multi Display
 #xrandr --output eDP --mode 1366x768 --output VGA-0 --mode 1920x1080 --left-of eDP
+## Configure Eth0 IP
+ifconfig enp2s0 192.168.0.14
+echo "1" > /proc/sys/net/ipv4/ip_forward
 #start windows manager desktop
 awesome
 
