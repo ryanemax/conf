@@ -19,6 +19,7 @@ ZSH_THEME="bullet-train"
 - NerdTree
 - YouCompleteMe
 ``` bash
+pacman -S python2 cmake
 cd .vim/bundle/YouCompleteMe
 ./install.xx #编译安装
 ```
