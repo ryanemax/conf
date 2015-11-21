@@ -5,6 +5,17 @@
 # Features
 
 ## Oh-My-Zsh dotfiles
+``` bash
+## both install
+pacman -S zsh
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+## for arch with chsh
+chsh -s /bin/zsh
+## for win without chsh
+vim C:\msys64\xxx.bat
+:%s/bash/zsh/g
+```
 ``` lua
 #ZSH_THEME="robbyrussell"
 
