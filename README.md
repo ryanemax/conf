@@ -1,6 +1,6 @@
 # Ryn's dotfiles info
-Private use for my baby archlinux.
-Also compatible for my girl XPS13/Win10/msys2.
+- Private use for my baby archlinux.
+- Also compatible for my girl XPS13/Win10/msys2.
 
 # Features
 
