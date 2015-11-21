@@ -4,6 +4,15 @@
 
 # Features
 
+## Oh-My-Zsh dotfiles
+``` lua
+#ZSH_THEME="robbyrussell"
+
+#yaourt -S python2-powerline-git
+#ZSH_THEME="agnoster"
+#ZSH_THEME="Monokai"
+ZSH_THEME="bullet-train"
+```
 ## VIM dotfiles
 
 - Vundle
