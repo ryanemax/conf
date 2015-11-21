@@ -17,6 +17,11 @@ ZSH_THEME="bullet-train"
 
 - Vundle
 - NerdTree
+- YouCompleteMe
+``` bash
+cd .vim/bundle/YouCompleteMe
+./install.xx #编译安装
+```
 - Ultisnips
 - Golang Env
 - Markdown Env
