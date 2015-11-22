@@ -35,6 +35,7 @@ pacman -S python2 cmake
 cd .vim/bundle/YouCompleteMe
 ./install.xx #编译安装
 ## for msys2
+https://github.com/Valloric/YouCompleteMe/wiki/Windows-Installation-Guide
 http://www.cnblogs.com/tracyone/p/4735411.html
 $ pacman --needed -Sy bash pacman pacman-mirrors msys2-runtime
 执行完毕之后，关闭Shell，重新打开。
