@@ -53,6 +53,7 @@ Plugin 'rking/ag.vim'
 
 " set tab string 指定文件设置缩进字符串
 autocmd BufNewFile,BufRead *.html,*.htm set noexpandtab tabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead *.go set noexpandtab tabstop=2 shiftwidth=2
 
 " set multi tex format support
 "" Plugin 'vim-pandoc/vim-pandoc'
@@ -106,9 +107,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
-" let g:syntastic_go_checkers = ['gofmt']
+let g:syntastic_go_checkers = ['gofmt','govet','gotype']
 " set covim
-Plugin 'FredKSchott/CoVim'
+" Plugin 'FredKSchott/CoVim'
 
 " set tagbar manager
 " pacman -S ctags
