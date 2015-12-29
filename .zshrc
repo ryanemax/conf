@@ -8,9 +8,10 @@ export ZSH=/root/.oh-my-zsh
 #ZSH_THEME="robbyrussell"
 
 #yaourt -S python2-powerline-git
-#ZSH_THEME="agnoster"
+#https://github.com/caiogondim/bullet-train-oh-my-zsh-theme
+ZSH_THEME="agnoster"
 #ZSH_THEME="Monokai"
-ZSH_THEME="bullet-train"
+#ZSH_THEME="bullet-train"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

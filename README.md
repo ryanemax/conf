@@ -27,9 +27,15 @@ ZSH_THEME="bullet-train"
 ## VIM dotfiles
 
 - Vundle
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 - NerdTree
 - YouCompleteMe
 ``` bash
+## for debian
+apt-get install python python-dev
+apt-get install vim-nox
 ## for arch
 pacman -S python2 cmake
 cd .vim/bundle/YouCompleteMe
