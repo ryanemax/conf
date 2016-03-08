@@ -48,12 +48,15 @@ filetype plugin indent on    " required
 syntax on
 set hls " 打开搜索高亮
 
+" raml support
+Plugin 'IN3D/vim-raml'
 " 代码全文检索插件
 Plugin 'rking/ag.vim'
 
 " set tab string 指定文件设置缩进字符串
 autocmd BufNewFile,BufRead *.html,*.htm set noexpandtab tabstop=2 shiftwidth=2
 autocmd BufNewFile,BufRead *.go set noexpandtab tabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead *.raml set noexpandtab tabstop=2 shiftwidth=2
 
 " set multi tex format support
 "" Plugin 'vim-pandoc/vim-pandoc'
