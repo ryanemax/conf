@@ -57,6 +57,9 @@
 # RVM config
 !.rvmrc
 
+# KeyMap
+!.xmodmaprc
+
 # Vim plugins, ftplugins, syntax etc etc
 !.vim
 !.vim/*
