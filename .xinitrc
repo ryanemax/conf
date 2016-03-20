@@ -66,6 +66,8 @@ fcitx -d &
 ## Configure Eth0 IP
 ifconfig enp2s0 192.168.0.14
 echo "1" > /proc/sys/net/ipv4/ip_forward
+# load keymap rc
+xmodmap .xmodmaprc
 #start windows manager desktop
 awesome
 
